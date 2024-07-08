@@ -37,4 +37,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Output information
-        run: echo " MONGODB_DB_NAME:${{env.MONGODB_DB_NAME}}"
+        run: |
+          run: echo " MONGODB_DB_NAME:${{env.MONGODB_DB_NAME}}"
